@@ -25,10 +25,13 @@ cd /data/deploychain
 git checkout --track origin/deploy-single-node
 go build
 ./createChain
-cd /data/zion/node
+cd /data/zion
+for i in $(ls)
+do 
 ./build.sh
 ./init.sh
 ./start.sh
+done
 cd /data/
 cp -r /data/gohome/src/Zion ./
 git clone https://github.com/zsyznb/zion-meter.git
