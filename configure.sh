@@ -25,9 +25,9 @@ cd /data/deploychain
 git checkout --track origin/deploy-single-node
 go build
 ./createChain
-cd /data/zion
 for i in $(ls)
 do 
+cd /data/zion/$i
 ./build.sh
 ./init.sh
 ./start.sh
