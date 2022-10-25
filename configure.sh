@@ -30,6 +30,7 @@ cd /data/zion/node
 ./init.sh
 ./start.sh
 cd /data/
+cp -r /data/gohome/src/Zion ./
 git clone https://github.com/zsyznb/zion-meter.git
 cd /data/zion-meter
 git checkout --track origin/tpsTest2.0
