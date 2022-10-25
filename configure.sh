@@ -38,4 +38,5 @@ git clone https://github.com/zsyznb/zion-meter.git
 cd /data/zion-meter
 git checkout --track origin/tpsTest2.0
 make compile
+mkdir log
 ./start_tps.sh 60 20 1h
