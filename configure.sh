@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#已经实现自动安装golang，本地配置node文件夹，启动链，拉取tps测试工具，开始tps测试
 cd /
 sudo chown ubuntu data
 cd /data
@@ -37,6 +37,9 @@ cp -r /data/gohome/src/Zion ./
 git clone https://github.com/zsyznb/zion-meter.git
 cd /data/zion-meter
 git checkout --track origin/tpsTest2.0
+cd /data/zion-meter/build
+mv config-sidechain.json config.json
+cd /data/zion-meter
 make compile
 mkdir log
 ./start_tps.sh 60 20 1h
