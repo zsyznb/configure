@@ -3,8 +3,8 @@
 cd /
 sudo chown ubuntu data
 cd /data
-wget https://dl.google.com/go/go1.19.2.linux-amd64.tar.gz
-tar -zxvf go1.19.2.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.19.1.linux-amd64.tar.gz
+tar -zxvf go1.19.1.linux-amd64.tar.gz
 export GOROOT=/data/go
 export PATH=$PATH:$GOROOT/bin 
 mkdir gohome
