@@ -42,4 +42,3 @@ mv config-sidechain.json config.json
 cd /data/zion-meter
 make compile
 mkdir log
-./start_tps.sh 60 20 1h
